@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="jogo">
+        <h1 class="jogo__titulo">
+                Pedra, Papel e Tesoura
+        </h1>
+        <section class="jogo__inicio">
+            <p class="jogo__inicio__texto">
+                As regras do jogo Pedra, papel e tesoura são simples. Dois jogadores escolhem um dos três objetos para representar sua jogada: pedra, papel ou tesoura. A pedra vence a tesoura, a tesoura vence o papel e o papel vence a pedra. Se ambos os jogadores escolhem o mesmo objeto, é um empate e uma nova rodada é jogada. O objetivo do jogo é ganhar mais rodadas do que o seu oponente.
+            </p>
+            <p class="jogo__inicio__texto">
+                <br>Comandos jogador 1 { 1= pedra,  2= papel e 3= tesoura}
+            </p>
+            <p class="jogo__inicio__texto">
+                Comandos jogador 2 {a= pedra,  s= papel e d= tesoura}
+            </p>
+        </section>
+        <form class="jogo__form">
+            <h3 class="jogo__subtitulo">Bom, vamos começar</h3>
+
+            <div  class="jogo__form__div">
+                <label for="player1" class="jogo__form__div__label"> Jogador 1</label>
+                <input type="text" name="player1" id="jog1" class="jogo__form__div__input">
+
+                <label for="player2" class="jogo__form__div__label"> Jogador 2</label>
+                <input type="text" name="player2" id="jog2" class="jogo__form__div__input">
+            </div>
+            <div  class="jogo__form__div" >
+                <button id="btn"  class="jogo__form__div__btn">
+                    Jogar
+                </button>
+            </div>
+        </form>
+        <h3 id="ganhador" class="jogo__subtitulo"> Resultado :</h3>
+        <section class="jogo__mensagem">
+            <div>
+                <h6>Jogador 1</h6>
+                <img src="" id="img1" class="jogo__mensagem__img">
+            </div>
+            <div>
+                <h6>Jogador 2</h6>
+                <img src="" id="img2" class="jogo__mensagem__img">
+            </div>
+           
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
